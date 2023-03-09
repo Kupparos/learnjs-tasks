@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="elem"></div>
+
+    <script>
+      let div = document.getElementById("elem");
+
+      div.style.overflowY = "scroll";
+      div.style.width = "100px";
+      div.style.height = "100px";
+
+      let scrollWidth = div.offsetWidth - div.clientWidth;
+
+      div.remove();
+
+      console.log(scrollWidth);
+    </script>
+  </body>
+</html>
